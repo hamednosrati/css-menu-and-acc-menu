@@ -1,0 +1,91 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+  <div class="main">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</body>
+</html>
+```
+
+
+---------------------------
+```css
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: hsl(13,50%,42%);  
+}
+
+
+
+div.main{
+  width:890px;
+  height: 380px;
+  overflow: hidden;
+  margin: 100px auto 0;
+  box-shadow: 0 0 15px 0  hsl(14,20%,60%);
+}
+
+.main ul{
+  width:1500px;
+}
+
+.main ul li{
+  list-style-type: none;
+  width:178px; 
+  height: 380px;
+  float:left;
+  transition:all 1s;
+}
+.main:hover ul li{
+  width:99px;
+}
+.main ul li:hover{
+  width:490px;
+  transition:all 400ms;
+  -webkit-transform:rotate(360deg);
+  
+}
+
+.main ul li:nth-child(1){
+  background-image: url('http://jazzaab.ir/upload/4/0.930825001342968194_jazzaab_ir.jpg');
+}
+
+div.main ul li:nth-child(2){
+  background-image: url('http://jazzaab.ir/upload/4/0.689584001342968198_jazzaab_ir.jpg');
+  
+}
+
+div.main ul li:nth-child(3){
+  background-image: url('http://jazzaab.ir/upload/4/0.209076001342968210_jazzaab_ir.jpg');
+  
+}
+
+div.main ul li:nth-child(4){
+  background-image: url('http://www.jazzaab.ir/upload/4/0.889675001342968201_jazzaab_ir.jpg');
+}
+
+div.main ul li:nth-child(5){
+  background-image: url('http://jazzaab.ir/upload/4/0.297434001342968199_jazzaab_ir.jpg');
+}
+
+.main ul li:last-child{
+  padding: 230px;
+}
+
+```
