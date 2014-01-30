@@ -1,0 +1,192 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+ <link rel="stylesheet" href="http://ifont.ir/apicode/30">
+  <link rel="stylesheet" href="http://ifont.ir/apicode/8">
+   <link rel="stylesheet" href="http://ifont.ir/apicode/11">
+</head>
+<body>
+  
+  <menu class="main">
+    <li><a href="#"> خانه</a>
+      <div class="mi"></div>
+      <menu>
+        <li><a href="#">وب</a></li>
+        <li><a href="#">گرافیک</a></li>
+        <li><a href="#">عکس</a></li>
+        <li><a href="#">پوستر</a></li>
+        <li><a href="#">کاریکاتور</a></li>
+      </menu>
+    </li>
+    <li><a href="#">گالری</a>
+      <div class="mi"></div>
+        <menu>
+        <li><a href="#">وب</a></li>
+        <li><a href="#">گرافیک</a></li>
+        <li><a href="#">عکس</a></li>
+        <li><a href="#">پوستر</a></li>
+        <li><a href="#">کاریکاتور</a></li>
+      </menu>
+    
+    </li>
+    <li><a href="#"> محصولات</a> 
+      <div class="mi"></div>
+            <menu>
+        <li><a href="#">وب</a></li>
+        <li><a href="#">گرافیک</a></li>
+        <li><a href="#">عکس</a></li>
+        <li><a href="#">پوستر</a></li>
+        <li><a href="#">کاریکاتور</a></li>
+      </menu>
+    </li>
+    <li><a href="#"> درباره ما</a> 
+      
+      <div class="mi"></div>
+            <menu>
+        <li><a href="#">وب</a></li>
+        <li><a href="#">گرافیک</a></li>
+        <li><a href="#">عکس</a></li>
+        <li><a href="#">پوستر</a></li>
+        <li><a href="#">کاریکاتور</a></li>
+      </menu>
+    </li>
+    <li><a href="#"> تماس با ما</a> 
+      <div class="mi"></div>
+            <menu>
+        <li><a href="#">وب</a></li>
+        <li><a href="#">گرافیک</a></li>
+        <li><a href="#">عکس</a></li>
+        <li><a href="#">پوستر</a></li>
+        <li><a href="#">کاریکاتور</a></li>
+      </menu>
+    </li>
+  </menu>
+</body>
+</html>
+```
+
+
+-----------------------------------------
+
+
+```css
+*{
+  padding: 0;
+  margin: 0;  
+}
+
+
+
+menu.main{
+  float: right;
+  margin: 50px 0 0;
+  height:  700px;
+  background-color: #2C3E50;
+  -webkit-border-radius: 8px;
+  position: absolute;
+  right: -60px;
+  transition:all 2s;
+}
+
+menu.main:hover{
+  right: 0px;
+  transition:all 800ms;
+}
+menu.main:after{
+  content:"";
+  width:0;
+  height: 0;
+  display: table;
+  clear: both;
+}
+
+menu.main li{
+  list-style-type:none ;
+  border-bottom: 1px ridge #95A5A6;
+  transition:all 1200ms;
+  position: relative;
+}
+
+menu.main li:hover{
+  transition:all 950ms;
+  background-color: #34495E;
+  -webkit-border-radius: 8px;
+  
+}
+
+ menu.main li:hover div{
+  -webkit-transform:rotate(360deg);
+  transition:all 2s;
+}
+
+.mi{
+  position: absolute;
+  top:50%;
+  left: 10%;
+  background-color: #ECF0F1;
+  width:30px;
+  height: 30px;
+-webkit-border-radius: 0px 120px 120px 120px;
+  transition:all 3s;
+ 
+
+}
+menu.main li a{
+  text-decoration: none;
+  font-size:19px;
+  color:white;
+  text-shadow: 1px 1px 3px black;
+  display:block;
+  padding: 50px 0px 20px 50px  ;
+  font-family:'B fantezy',tahoma;
+}
+
+menu.main menu{
+  position: absolute;
+  right:300%;
+  top:0;
+  border-radius: 18px;
+  min-width:100%;
+  opacity: 0;
+  pointer-events:none;
+  transition:all 1s;
+}
+
+menu.main li:hover menu{
+  opacity: 1;
+  right: 100%;
+  transition:all 2s;
+  padding-right:none;
+  pointer-events:auto;
+  -webkit-transform:rotate(360deg);
+}
+
+
+
+menu.main li  li{
+  border-bottom:none;
+  background-color: #35C5E9;
+  float: none;
+  padding-right:none;
+}
+
+menu.main li  li:hover{
+  background-color: #3595E9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: ;
+  border-radius: ;
+}
+
+
+
+menu.main li  menu li a{
+  display: block;
+  padding: 20px 20px;
+  text-align: center;
+  font-size:19px;
+  font-family:'B tabassom',tahoma;
+}
+```
