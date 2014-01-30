@@ -1,0 +1,294 @@
+```html
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>JS Bin</title>
+  <link rel="stylesheet" href="http://ifont.ir/apicode/27" />
+  <link rel="stylesheet" href="http://ifont.ir/apicode/22" />
+</head>
+<body>
+  
+  <!--start main menu-->
+    
+  <menu class="main">
+    <li>
+      <!--sratr main menu part1-->
+      <a href="#">خانه</a>
+      <div class="mi"></div>
+      <!--start submenu-->        
+      <menu>            
+        <li><a href="#">وب</a>
+        <!--start sub menu1-->
+           <menu>
+            <li><a href="#">وب</a>
+              <!--start sub menu2-->
+              <menu>
+                <li><a href="#">hamed</a></li>
+              </menu>
+              <!--end sub menu2-->
+            </li>
+            <li><a href="#">پوستر</a>
+             <!--start sub menu2-->
+             <menu>
+               <li><a href="#">nosrati</a></li>
+             </menu>
+             <!--end sub menu2-->
+            </li>
+            <li><a href="#">عکس</a></li>
+            <li><a href="#">طراحی</a></li>
+           <li><a href="#">موزیک</a></li>
+         </menu>
+         <!--end sub menu1-->
+      </li>     
+      <li><a href="#">پوستر</a></li>
+      <li><a href="#">عکس</a></li>
+      <li><a href="#">طراحی</a></li>
+      <li><a href="#">موزیک</a></li>
+    </menu>
+    <!--end sub menu-->
+    </li>
+  <!--end  main menu part1-->    
+    
+ <!--start  main menu part2-->     
+    <li>
+      <a href="#">محصولات</a>
+      <div class="mi"></div>
+      <!--start submenu-->        
+      <menu>            
+        <li><a href="#">وب</a>
+        <!--start sub menu1-->
+           <menu>
+            <li><a href="#">وب</a>
+              <!--start sub menu2-->
+              <menu>
+                <li><a href="#">hamed</a></li>
+              </menu>
+              <!--end sub menu2-->
+            </li>
+            <li><a href="#">پوستر</a>
+             <!--start sub menu2-->
+             <menu>
+               <li><a href="#">nosrati</a></li>
+             </menu>
+             <!--end sub menu2-->
+            </li>
+            <li><a href="#">عکس</a></li>
+            <li><a href="#">طراحی</a></li>
+           <li><a href="#">موزیک</a></li>
+         </menu>
+         <!--end sub menu1-->
+      </li>     
+      <li><a href="#">پوستر</a></li>
+      <li><a href="#">عکس</a></li>
+      <li><a href="#">طراحی</a></li>
+      <li><a href="#">موزیک</a></li>
+    </menu>
+    <!--end sub menu-->
+    </li>
+ <!--end  main menu part2-->     
+    
+   <!--start  main menu part3-->   
+    <li>
+      <a href="#">گالری</a> 
+      <div class="mi"></div>
+      <!--start sub menu-->
+      <menu>
+        <li><a href="#">وب</a></li>
+        <li><a href="#">پوستر</a></li>
+        <li><a href="#">عکس</a></li>
+        <li><a href="#">طراحی</a></li>
+        <li><a href="#">موزیک</a></li>
+      </menu>
+      <!--end sub menu-->
+    </li>
+     <!--end  main menu part3--> 
+    
+    
+    <!--start  main menu part4-->
+    <li>
+      <a href="#">درباره ما</a>
+      <div class="mi"></div>
+      <!--start sub menu-->
+      <menu>
+        <li><a href="#">وب</a></li>
+        <li><a href="#">پوستر</a></li>
+        <li><a href="#">عکس</a></li>
+        <li><a href="#">طراحی</a></li>
+        <li><a href="#">موزیک</a></li>
+      </menu>
+      <!--end sub menu-->
+    </li>
+    <!--end  main menu part4-->  
+    
+    <!--start  main menu part5-->
+    <li>
+      <a href="#">تماس با ما</a>
+      <div class="mi"></div>
+      <!--start sub menu-->
+      <menu>
+        <li><a href="#">وب</a></li>
+        <li><a href="#">پوستر</a></li>
+        <li><a href="#">عکس</a></li>
+        <li><a href="#">طراحی</a></li>
+        <li><a href="#">موزیک</a></li>
+      </menu>
+      <!--end sub menu-->
+    </li>
+    <!--end  main menu part5-->  
+        
+  </menu>
+  <!--end main menu-->
+</body>
+</html>
+
+```
+
+
+
+
+-----------------------------------------------------
+
+
+```css
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: hsl(20,100%,56%);
+}
+/*start main menu*/
+menu.main{
+  background-color: #2C3E50;
+   height: 700px;
+  float: right;
+  margin: 50px 0 0;
+  position: absolute;
+  transition:all 800ms;
+  right:-80px;
+  -webkit-border-radius: 5px;
+
+}
+
+menu.main:hover{
+  right:0;
+  transition:all 300ms;
+}
+
+menu.main:after{
+  content:"";
+  width:0;
+  height: 0;
+  display: block;
+  clear: both;
+}
+/*end main menu*/
+
+/*start shape on li element*/
+
+menu.main li:hover div.mi{
+  -webkit-transform:rotate(340deg);
+  transition:all 2s;
+}
+
+.mi{
+  position: absolute;
+  top:40%;
+  left:5%;
+  width:30px;
+  height: 30px;
+  background-color: #35C5E9;
+  -webkit-border-radius: 0 50px 50px 50px;
+  transition:all 3s;
+}
+
+/*end shape on li element*/
+
+/*start edit main menu include li and tag a*/
+menu.main li{
+  list-style-type: none;
+  border-bottom:1px ridge silver; 
+  position: relative;
+  white-space:nowrap;
+}
+
+menu.main li:hover > a{
+  color:white;
+  text-shadow: 1px 1px 4px #000;
+}
+
+menu.main li a{
+  text-decoration: none;
+  color:black;
+  font-size:23px;
+  text-shadow: 1px 1px 3px white;
+   font-family:'B Setareh',tahoma;
+  display: block;
+  padding: 30px 0 20px 42px;
+  
+}
+/*end edit main menu include li and tag a*/
+
+/*start sub menu edit*/
+
+menu.main menu{
+  position: absolute;
+  right:300%;
+  top:0;
+  background-color: #3498DB;
+  min-width:100%;
+  opacity: 0;
+  transition:all 500ms;
+  -webkit-transform:skew(5deg,20deg);
+  pointer-events:none;
+}
+
+menu.main li:hover > menu{
+  opacity: 1;
+  transition:all 350ms;
+  -webkit-transform:skew(0deg,0deg);
+  right:100%;
+  pointer-events:auto;
+}
+
+menu.main menu li{
+  border-bottom: none;
+  white-space:nowrap;
+}
+
+menu.main menu li a{
+  font-family:'B morvarid',tahoma;
+}
+
+/*end sub menu edit*/
+
+/*start sub menu(nth-child) edit*/
+
+menu.main menu li menu{
+  -webkit-border-radius: 5px;
+  -webkit-transform:rotate(60deg);
+  transition:all 500ms;
+  opacity: 0;
+}
+
+menu.main menu li:hover > menu{
+  -webkit-transform:rotate(0deg);
+  transition:all 350ms;
+  right:100%;
+  opacity: 1;
+}
+
+menu.main menu li li{
+  
+}
+
+/*end sub menu(nth-child) edit*/
+
+
+
+
+```
