@@ -1,0 +1,144 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+  <menu class="main">
+    <li><a href="#">home</a>
+      <menu>
+        <li><a href="#">imageing</a></li>
+        <li><a href="#">design</a></li>
+        <li><a href="#">gaalery</a></li>
+        <li><a href="#">photo</a></li>
+        <li><a href="#">web</a></li>
+      </menu>
+    </li>
+    <li><a href="#">product</a>
+        <menu>
+        <li><a href="#">imageing</a></li>
+        <li><a href="#">design</a></li>
+        <li><a href="#">gaalery</a></li>
+        <li><a href="#">photo</a></li>
+        <li><a href="#">web</a></li>
+      </menu>
+    </li>
+    <li><a href="#">portfolio</a>
+        <menu>
+        <li><a href="#">imageing</a></li>
+        <li><a href="#">design</a></li>
+        <li><a href="#">gaalery</a></li>
+        <li><a href="#">photo</a></li>
+        <li><a href="#">web</a></li>
+      </menu>
+    </li>
+    <li><a href="#">about us</a>
+        <menu>
+        <li><a href="#">imageing</a></li>
+        <li><a href="#">design</a></li>
+        <li><a href="#">gaalery</a></li>
+        <li><a href="#">photo</a></li>
+        <li><a href="#">web</a></li>
+      </menu>
+    </li>
+    <li><a href="#">contact us</a>
+        <menu>
+        <li><a href="#">imageing</a></li>
+        <li><a href="#">design</a></li>
+        <li><a href="#">gaalery</a></li>
+        <li><a href="#">photo</a></li>
+        <li><a href="#">web</a></li>
+      </menu>
+    </li>
+  </menu>
+</body>
+</html>
+```
+
+--------------------------------------------
+```css
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #973449 ;
+}
+
+
+menu.main{
+  list-style: none;
+  background-color: #34495E;
+  width:1500px;
+  margin: 20px auto;
+  
+}
+
+menu.main:after{
+  content:" ";
+  width:0;
+  height: 0;
+  clear: left;
+  display: block;
+}
+
+menu.main li{
+  float:left;
+  border-right:2px ridge silver;
+  transition:all  700ms;
+  position: relative;  
+}
+
+menu.main li:hover{
+  transition:all  650ms;
+  padding-left: 60px;
+  background-color: #3498DB;
+}
+
+menu.main li a{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: forte;
+  color:white;
+  text-shadow: 1px 1px 3px black;
+  font-size:22px;
+  display: block;
+  padding: 10px 60px;
+  -webkit-transform:rotate(2deg);
+}
+
+menu.main li:hover > a{
+  color:black;
+  text-shadow: 1px 1px 3px white;
+}
+
+
+
+menu.main menu{
+  position: absolute;
+  left:0;
+  min-width:100%;
+  top:350%;
+  background-color: #35C5E9;
+  transition:all  700ms;
+  opacity: 0; 
+  -webkit-border-radius: 4px;
+  pointer-events:none;
+}
+
+menu.main li:hover menu{
+  opacity: 1;
+  top:100%;
+  pointer-events:auto;
+  transition:all  650ms;
+}
+
+menu.main li menu li{
+  float: none;
+  list-style: none;
+  border-right:none;
+}
+```
